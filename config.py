@@ -1,7 +1,7 @@
 # MySQL database configuration
 DB_HOST = 'localhost'
-DB_USER = 'yash'
-DB_PASSWORD = '9834148536'
+DB_USER = '' #replace with username
+DB_PASSWORD = '' #replace with password
 DB_NAME = 'project_submission_db'
 
 # File upload configuration
