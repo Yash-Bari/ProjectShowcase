@@ -145,9 +145,8 @@ main {
   background-color: #292929;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: calc(50% - 2rem);
-  display: inline-block;
-  vertical-align: inline;
+  width: 45%;
+  display: block;
   transition: transform 0.3s ease-out;
 }
 
