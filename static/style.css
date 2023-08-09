@@ -1,0 +1,219 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #fff;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  position: relative;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-out;
+}
+
+nav ul li a:hover {
+  background-color: #333;
+}
+
+.search-bar {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+
+#search-input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+}
+
+#search-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.3rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-out;
+}
+
+#search-button:hover {
+  background-color: #0056b3;
+}
+
+/* Main content styles */
+main {
+  padding: 2rem;
+}
+
+/* Stylish project author display */
+.project-author {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 0.5rem;
+}
+
+/* Stylish upload form styles */
+.upload-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #292929;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.upload-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.upload-form input[type="text"],
+.upload-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #121212;
+  color: #fff;
+}
+
+.upload-form input[type="file"] {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.submit-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-out;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Project card styles */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project-card {
+  position: relative;
+  border: 1px solid #444;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #292929;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: calc(50% - 2rem);
+  display: inline-block;
+  vertical-align: inline;
+  transition: transform 0.3s ease-out;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.project-description-tooltip {
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  top: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: 80%;
+  text-align: center;
+  z-index: 1;
+}
+
+.tooltip-content {
+  font-size: 0.8rem;
+}
+
+.tooltip-icon {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.project-card:hover .tooltip {
+  display: block;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Additional styling for links and videos */
+a {
+  color: #007bff;
+}
+
+video {
+  max-width: 100%;
+}

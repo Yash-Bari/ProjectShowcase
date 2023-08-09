@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Showcase</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('upload') }}">Upload</a></li>
+      </ul>
+    </nav>
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Search projects by title or author">
+      <button id="search-button">Search</button>
+    </div>
+  </header>
+  {% block content %}
+  {% endblock %}
+  <footer>
+    &copy; 2023 Project Showcase
+  </footer>
+  <script src="{{ url_for('static', filename='search.js') }}"></script>
+</body>
+</html>
